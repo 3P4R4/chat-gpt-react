@@ -76,3 +76,47 @@ nav p{
   right: 0;
   cursor: pointer;
 }
+.bottom-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-container{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+input {
+  border: none;
+  background-color: #ffffff80;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 5px 12px 15px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 29px 0 rgb(0 0 0 / 75%);
+}
+
+input:focus {
+  outline: none;
+}
+#submit {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.feed li{
+  list-style: none;
+}

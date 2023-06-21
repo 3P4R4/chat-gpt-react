@@ -12,7 +12,7 @@ const App = () => {
       </section>
       <section className="main">
         <h1>Chat-GPT Mendozalz</h1>
-        <ul className="fedd">
+        <ul className="feed">
           <li>texto</li>
         </ul>
         <div className="bottom-section">
