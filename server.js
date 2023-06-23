@@ -5,10 +5,14 @@ import cors from 'cors';
 const app = express();
 app.use(express.json());
 app.use(cors());
+/* const corsOptions = {
+    origin: 'http://localhost:8000',
+}; */
 
+/* app.use(cors(corsOptions)); */
 app.listen(PORT, () => console.log('El server está corriendo en el puerto ' + PORT));
 
-const API = "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"
+const API = "Mi clave API"
 
 app.post('/completions', async (req, res)=>{
     const options = {

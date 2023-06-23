@@ -13,16 +13,17 @@ const App = () => {
       "Content-Type": "aplication/json"
     }
   }
-  const getMessages = async () =>{
+  const getMessages = async () => {
     try {
-      const response = await fetch("http://localhost:8000/completions", options)
-      const data = await response.json()
-      setMessage(data.choices[0].message)
+      const response = await fetch("http://localhost:8000/completions", options);
+      const data = await response.json();
+      setMessage(data.choices[0].message);
     } catch (error) {
-      console.error(error)
+      console.error("Error al realizar la solicitud a la API:" + error);
     }
-  }
-  console.log(message);
+  };
+  
+  console.log("el valor de value es: " + message);
   return (
     <div className="app">
       <section className="side-bar">
